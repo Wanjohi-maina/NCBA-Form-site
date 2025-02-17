@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loop Survey Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <!-- HERO SECTION -->
+        <header>
+            <div id="hero-section">
+                <img id="logo" src="images/loop-logo.png">
+                <h1 id="title">NCBA LOOP Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+        </header>
+        <!-- FORM SECTION -->
+        <main>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="label-name" for="name">Name</label>
+                    <input 
+                    id="name" 
+                    name="name" 
+                    class="form-control" 
+                    type="text" 
+                    placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="label-email" for="email">Email</label>
+                    <input 
+                    id="email" 
+                    name="email" 
+                    class="form-control" 
+                    type="email" 
+                    placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label id="label-age" for="age">Age (Optional)</label>
+                    <input 
+                    id="number"
+                    name="age"
+                    class="form-control" 
+                    type="number"
+                    min="10" 
+                    max="99"
+                    placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full-Time Job</option>
+                        <opion value="self-employed">Self-Employed</opion>
+                        <option value="preferNo">Prefer Not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend NCBA Loop to a friend?</p>
+                    <label for="definitely">
+                        <input 
+                        type="radio" 
+                        name="user-recommend"
+                        class="input-radio" 
+                        value="definitely" 
+                        checked>Definitely
+                    </label>
+                    <label for="maybe">
+                        <input 
+                        type="radio" 
+                        name="user-recommend"
+                        class="input-radio" 
+                        value="maybe">Maybe
+                    </label>
+                    <label for="not-sure">
+                        <input 
+                        type="radio" 
+                        name="user-recommend"
+                        class="input-radio" 
+                        value="not-sure">Not Sure
+                    </label>
+                </div>
+                <div class="form-group"> 
+                    <p>What is your favorite feature of NCBA Loop?</p>
+                    <select name="fav-feature" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="transfer">Free funds transfer</option>
+                        <option value="withdrawals">Unlimited cash withdrawals</option>
+                        <option value="debit-card">Access to debit card</option>
+                        <option value="customer-care">Good customer care services</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <label for="customer-service">
+                        <input 
+                        type="checkbox"
+                        name="preference"
+                        class="input-checkbox"
+                        value="customer-service">Customer Service
+                    </label>
+                    <label for="digital-wallet">
+                        <input 
+                        type="checkbox" 
+                        name="preference" 
+                        class="input-checkbox" 
+                        value="digital-wallet">Digital Super Wallet
+                    </label>
+                    <label for="transaction-fees">
+                        <input 
+                        type="checkbox" 
+                        name="preference" 
+                        class="input-checkbox" 
+                        value="transaction-fees">Transaction Fees
+                    </label>
+                    <label for="loop-loans">
+                        <input 
+                        type="checkbox" 
+                        name="preference" 
+                        class="input-checkbox" 
+                        value="loop-loans">Loop Loans
+                    </label>
+                    <label for="loop-overdraft">
+                        <input 
+                        type="checkbox" 
+                        name="preference" 
+                        class="input-checkbox" 
+                        value="loop-overdraft">Loop Overdraft
+                    </label>
+                    <label for="quick-pay">
+                        <input 
+                        type="checkbox"
+                        name="preference"
+                        class="input-checkbox"
+                        value="quick-pay">Quick Pay
+                    </label>
+                    <label for="online-banking">
+                        <input 
+                        type="checkbox"
+                        name="preference"
+                        class="input-checkbox"
+                        value="online-banking">Online Banking
+                    </label>
+                    <label for="loop-app">
+                        <input 
+                        type="checkbox"
+                        name="preference"
+                        class="input-checkbox"
+                        value="loop-app">Loop Banking App
+                    </label>
+                    <label for="monthly-statements">
+                        <input 
+                        type="checkbox"
+                        name="preference"
+                        class="input-checkbox"
+                        value="monthly-statements">Monthly Statements
+                    </label>
+                    <label for="security">
+                        <input 
+                        type="checkbox"
+                        name="preference"
+                        class="input-checkbox"
+                        value="security">Security
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea 
+                    id="comments" 
+                    name="comment" 
+                    class="input-textarea" 
+                    placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </main>
+        <!-- FOOTER SECTION -->
+        <footer>
+            <div class="footer">
+                <p>LOOP is regulated by the Central Bank of Kenya © 2023 LOOP DFS</p>
+            </div>
+        </footer>
+    </body>
+</html>
