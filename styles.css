@@ -38,7 +38,10 @@ label {
     display: flex;
     margin-bottom: 10px;  
 }
-input, select, button, textarea {
+input, 
+select, 
+button, 
+textarea {
     font-family: inherit;
     font-size: inherit;
 }
@@ -60,7 +63,8 @@ select {
 p {
     margin-bottom: 10px;
 }
-.input-radio, .input-checkbox {
+.input-radio, 
+.input-checkbox {
     margin-right: 10px;
     height: 20px;
     width: 20px;
